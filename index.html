@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Mujer - Tienda Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #ff6b81;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            color: #ff6b81;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        .add-to-cart {
+            background-color: #ff6b81;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elegance - Moda para Mujer</h1>
+        <p>Las últimas tendencias a tu alcance</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Vestidos</a></li>
+            <li><a href="#">Blusas</a></li>
+            <li><a href="#">Pantalones</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Ofertas</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Nuestros Productos Destacados</h2>
+        
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <img src="https://www.taisprincess.com.pe/wp-content/uploads/2024/10/1677488192f67aaae9f9cc51a8d96f788b2de7c9fa_thumbnail_900x.webp" alt="Vestido Elegante" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Vestido Floral Primaveral</h3>
+                    <p class="product-price">$59.99</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <img src="https://i.pinimg.com/originals/29/8b/74/298b7454b662bd6118ad7e9008a3a312.jpg" alt="Blusa Moderna" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Blusa de Seda con Detalles</h3>
+                    <p class="product-price">$39.99</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <img src="https://superexitoec.vteximg.com.br/arquivos/ids/170642-1000-1000/_MCF7068.png?v=638493955545130000" alt="Jeans Altos" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Jeans Slim Fit Alto Talle</h3>
+                    <p class="product-price">$49.99</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Producto 4 -->
+            <div class="product-card">
+                <img src="https://shop.mango.com/assets/rcs/pics/static/T8/fotos/S/87085953_TM.jpg?imwidth=2048&imdensity=1&ts=1739783073982" alt="Chaqueta Moderna" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Chaqueta Denim Oversize</h3>
+                    <p class="product-price">$69.99</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Elegance - Moda para Mujer. Todos los derechos reservados.</p>
+        <p>Contacto: info@elegancemoda.com | Tel: +1 234 567 890</p>
+    </footer>
+</body>
+</html>
